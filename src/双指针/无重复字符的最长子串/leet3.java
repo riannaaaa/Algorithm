@@ -1,4 +1,4 @@
-package Leet.双指针.无重复字符的最长子串;
+package 双指针.无重复字符的最长子串;
 
 public class leet3 {
     public int lengthOfLongestSubstring(String s) {

@@ -1,4 +1,4 @@
-package Leet.无分组.通过删除字母匹配到字典里最长单词;
+package  无分组.通过删除字母匹配到字典里最长单词;
 
 import java.util.List;
 

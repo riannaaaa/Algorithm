@@ -1,4 +1,4 @@
-package Leet.无分组.除自身以外数组的乘积;
+package  无分组.除自身以外数组的乘积;
 
 import java.util.ArrayList;
 import java.util.List;

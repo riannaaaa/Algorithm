@@ -1,4 +1,4 @@
-package Leet.双指针.接雨水;
+package 双指针.接雨水;
 
 
 public class leet42 {

@@ -1,4 +1,4 @@
-package Leet.快速幂.统计好数字的数目;
+package 快速幂.统计好数字的数目;
 
 public class leet1922 {
     static final int mod = (int) (Math.pow(10, 9) + 7);

@@ -1,4 +1,4 @@
-package Leet.Greedy.分发饼干;
+package  Greedy.分发饼干;
 
 import java.util.Arrays;
 

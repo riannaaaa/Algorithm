@@ -1,4 +1,4 @@
-package Leet.无分组.七进制数;
+package 无分组.七进制数;
 
 public class leet504 {
     //StringBuilder的res.insert(0,"-")方法

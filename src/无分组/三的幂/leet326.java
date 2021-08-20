@@ -1,4 +1,4 @@
-package Leet.无分组.三的幂;
+package  无分组.三的幂;
 
 public class leet326 {
     public boolean isPowerOfThree(int n) {

@@ -1,4 +1,4 @@
-package Leet.无分组.重塑矩阵;
+package  无分组.重塑矩阵;
 
 public class leet566 {
     public int[][] matrixReshape(int[][] mat, int r, int c) {

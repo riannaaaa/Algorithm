@@ -1,4 +1,4 @@
-package Leet.Tree.Morris遍历;
+package Tree.Morris遍历;
 
 import javax.swing.tree.TreeNode;
 import java.util.*;

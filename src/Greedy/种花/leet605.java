@@ -1,4 +1,4 @@
-package Leet.Greedy.种花;
+package  Greedy.种花;
 
 public class leet605 {
     /*

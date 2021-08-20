@@ -1,4 +1,4 @@
-package Leet.无分组.计数质数;
+package 无分组.计数质数;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package Leet.Greedy.字符串中的最大奇数;
+package Greedy.字符串中的最大奇数;
 
 public class leet1903 {
     /*

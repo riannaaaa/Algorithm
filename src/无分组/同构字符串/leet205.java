@@ -1,4 +1,4 @@
-package Leet.无分组.同构字符串;
+package  无分组.同构字符串;
 
 public class leet205 {
     public boolean isIsomorphic(String s, String t) {

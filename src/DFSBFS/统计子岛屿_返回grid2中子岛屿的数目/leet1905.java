@@ -1,4 +1,4 @@
-package Leet.DFSBFS.统计子岛屿_返回grid2中子岛屿的数目;
+package  DFSBFS.统计子岛屿_返回grid2中子岛屿的数目;
 
 public class leet1905 {
     /*

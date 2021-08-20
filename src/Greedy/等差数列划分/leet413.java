@@ -1,4 +1,4 @@
-package Leet.Greedy.等差数列划分;
+package  Greedy.等差数列划分;
 
 public class leet413 {
     /*

@@ -1,4 +1,4 @@
-package Leet.双指针.验证回文字符串Ⅱ;
+package 双指针.验证回文字符串Ⅱ;
 
 public class leet680 {
 //    判断回文串 -> 双指针

@@ -1,5 +1,3 @@
-package 剑指;
-
 import java.util.*;
 
 public class offer57 {

@@ -1,4 +1,4 @@
-package Leet.Greedy.划分字母区间;
+package  Greedy.划分字母区间;
 
 import java.util.ArrayList;
 import java.util.Arrays;

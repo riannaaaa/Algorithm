@@ -1,4 +1,4 @@
-package 剑指;
+package 栈.用两个栈实现队列;
 
 import java.util.Stack;
 

@@ -1,4 +1,4 @@
-package Leet.DFSBFS.分割回文串;
+package DFSBFS.分割回文串;
 
 import java.util.ArrayList;
 import java.util.Arrays;

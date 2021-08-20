@@ -1,4 +1,4 @@
-package Leet.无分组.旋转图像;
+package 无分组.旋转图像;
 
 public class leet48 {
     //    旋转图像

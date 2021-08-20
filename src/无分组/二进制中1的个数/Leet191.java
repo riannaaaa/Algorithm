@@ -1,4 +1,4 @@
-package Leet.无分组.二进制中1的个数;
+package  无分组.二进制中1的个数;
 
 public class Leet191 {
     /*

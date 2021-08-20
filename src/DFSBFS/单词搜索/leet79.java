@@ -1,4 +1,4 @@
-package Leet.DFSBFS.单词搜索;
+package DFSBFS.单词搜索;
 
 public class leet79 {
     public boolean exist(char[][] board, String word) {

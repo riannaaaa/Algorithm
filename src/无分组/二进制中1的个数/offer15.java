@@ -1,4 +1,4 @@
-package 剑指;
+package 无分组.二进制中1的个数;
 
 import java.util.Arrays;
 

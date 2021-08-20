@@ -1,4 +1,4 @@
-package Leet.Greedy.有效的括号字符串;
+package Greedy.有效的括号字符串;
 
 public class leet678 {
 //方法：贪心算法

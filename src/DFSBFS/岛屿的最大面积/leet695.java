@@ -1,4 +1,4 @@
-package Leet.DFSBFS.岛屿的最大面积;
+package DFSBFS.岛屿的最大面积;
 
 public class leet695 {
     /*

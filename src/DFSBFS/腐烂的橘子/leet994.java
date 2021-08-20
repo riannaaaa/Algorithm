@@ -1,4 +1,4 @@
-package Leet.DFSBFS.腐烂的橘子;
+package DFSBFS.腐烂的橘子;
 
 import java.util.ArrayDeque;
 import java.util.Queue;

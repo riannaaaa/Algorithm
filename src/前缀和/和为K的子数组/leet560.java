@@ -1,4 +1,4 @@
-package Leet.前缀和.和为K的子数组;
+package 前缀和.和为K的子数组;
 
 import java.util.HashMap;
 

@@ -1,4 +1,4 @@
-package Leet.DFSBFS.全排列;
+package DFSBFS.全排列;
 
 import java.util.ArrayList;
 import java.util.Arrays;

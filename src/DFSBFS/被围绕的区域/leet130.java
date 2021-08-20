@@ -1,4 +1,4 @@
-package Leet.DFSBFS.被围绕的区域;
+package DFSBFS.被围绕的区域;
 
 public class leet130 {
     /*

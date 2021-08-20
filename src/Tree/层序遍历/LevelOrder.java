@@ -1,6 +1,6 @@
-package Leet.Tree.层序遍历;
+package Tree.层序遍历;
 
-import Leet.Tree.Morris遍历.Morris;
+import Tree.Morris遍历.Morris;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

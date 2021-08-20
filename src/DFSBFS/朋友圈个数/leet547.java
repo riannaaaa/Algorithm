@@ -1,4 +1,4 @@
-package Leet.DFSBFS.朋友圈个数;
+package DFSBFS.朋友圈个数;
 
 public class leet547 {
     /*

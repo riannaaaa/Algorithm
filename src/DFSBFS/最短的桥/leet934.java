@@ -1,4 +1,4 @@
-package Leet.DFSBFS.最短的桥;
+package DFSBFS.最短的桥;
 
 import java.util.LinkedList;
 

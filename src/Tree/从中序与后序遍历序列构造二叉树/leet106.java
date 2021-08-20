@@ -1,6 +1,7 @@
-package Leet.Tree.从中序与后序遍历序列构造二叉树;
+package Tree.从中序与后序遍历序列构造二叉树;
 
-import Leet.Tree.Morris遍历.Morris;
+import Tree.Morris遍历.Morris;
+import Tree.Morris遍历.Morris;
 
 import java.util.Arrays;
 

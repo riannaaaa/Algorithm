@@ -1,4 +1,4 @@
-package Leet.Greedy.买卖一次股票的最大利润;
+package  Greedy.买卖一次股票的最大利润;
 
 public class Offer63 {
     /*

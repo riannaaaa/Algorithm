@@ -1,4 +1,4 @@
-package Leet.单调栈.每日温度;
+package 单调栈.每日温度;
 
 import java.util.Stack;
 

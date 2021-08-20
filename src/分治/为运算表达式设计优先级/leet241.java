@@ -1,4 +1,4 @@
-package Leet.分治.为运算表达式设计优先级;
+package 分治.为运算表达式设计优先级;
 
 import java.util.ArrayList;
 import java.util.List;

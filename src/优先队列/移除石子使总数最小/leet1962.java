@@ -1,4 +1,4 @@
-package Leet.优先队列.移除石子使总数最小;
+package 优先队列.移除石子使总数最小;
 
 import java.util.PriorityQueue;
 

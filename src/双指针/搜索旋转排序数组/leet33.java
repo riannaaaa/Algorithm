@@ -1,4 +1,4 @@
-package Leet.双指针.搜索旋转排序数组;
+package 双指针.搜索旋转排序数组;
 
 public class leet33 {
     public int search(int[] nums, int target) {

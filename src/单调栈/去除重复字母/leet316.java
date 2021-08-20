@@ -1,4 +1,4 @@
-package Leet.单调栈.去除重复字母;
+package 单调栈.去除重复字母;
 
 import java.util.Stack;
 

@@ -1,4 +1,4 @@
-package Leet.DFSBFS.组合;
+package DFSBFS.组合;
 
 import java.util.ArrayList;
 import java.util.List;

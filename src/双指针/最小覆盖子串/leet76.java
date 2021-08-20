@@ -1,4 +1,4 @@
-package Leet.双指针.最小覆盖子串;
+package 双指针.最小覆盖子串;
 
 import java.util.HashMap;
 

@@ -1,4 +1,4 @@
-package Leet.DFSBFS.二叉树的所有路径;
+package DFSBFS.二叉树的所有路径;
 
 import java.util.ArrayList;
 import java.util.List;

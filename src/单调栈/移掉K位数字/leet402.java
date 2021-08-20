@@ -1,4 +1,4 @@
-package Leet.单调栈.移掉K位数字;
+package 单调栈.移掉K位数字;
 
 import java.util.Stack;
 

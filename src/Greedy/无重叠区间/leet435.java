@@ -1,4 +1,4 @@
-package Leet.Greedy.无重叠区间;
+package Greedy.无重叠区间;
 
 import java.util.Arrays;
 
