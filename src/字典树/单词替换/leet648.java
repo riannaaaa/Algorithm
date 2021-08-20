@@ -1,4 +1,4 @@
-package DFSBFS.字典树.单词替换;
+package 字典树.单词替换;
 
 import java.util.List;
 

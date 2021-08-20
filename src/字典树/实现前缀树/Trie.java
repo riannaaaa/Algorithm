@@ -1,4 +1,4 @@
-package DFSBFS.字典树.实现前缀树;
+package 字典树.实现前缀树;
 class Trie {
     //居然一遍过 震撼
     boolean isEnd;
