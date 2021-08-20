@@ -111,7 +111,7 @@ public class offer57 {
     }
 
     public int minimumTotal(List<List<Integer>> triangle) {
-//      int[] Leet.dp = new int[triangle.size()];//到达n层的最短路径
+//      int[] 动态规划.dp = new int[triangle.size()];//到达n层的最短路径
         int min = Integer.MAX_VALUE;
         for (int i = 1; i < triangle.size(); i++) {
 

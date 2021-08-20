@@ -13,9 +13,9 @@ public class leet413 {
 
     public int numberOfArithmeticSlices(int[] nums) {
 //[2,3,4,6,3] 长度为n的等差数列？
-//[1,2,3,4] Leet.dp[]max length
+//[1,2,3,4] 动态规划.dp[]max length
         if (nums.length < 3) return 0;
-        //int[] Leet.dp = new int[nums.length+1];
+        //int[] 动态规划.dp = new int[nums.length+1];
         int res = 0;
         int sub = 0;
         int difference = nums[1] - nums[0];

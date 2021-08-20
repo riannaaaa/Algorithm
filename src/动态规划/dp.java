@@ -1,11 +1,9 @@
-package Leet;
+package 动态规划;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class dp {
-//1. 确定dp数组(Leet.dp table)以及下标的含义
+//1. 确定dp数组(动态规划.dp table)以及下标的含义
 //2. 确定递推公式
 //3. dp数组如何初始化
 //4. 确定遍历顺序
@@ -14,30 +12,30 @@ public class dp {
     /*
     * 509. 斐波那契数
     */
-//1. 确定dp数组(Leet.dp table)以及下标的含义
-//   Leet.dp[i]的定义为:第i个数的斐波那契数值是dp[i]
+//1. 确定dp数组(动态规划.dp table)以及下标的含义
+//   动态规划.dp[i]的定义为:第i个数的斐波那契数值是dp[i]
 //2. dp数组如何初始化
-//   Leet.dp[0] = 0;
-//   Leet.dp[1] = 1;
+//   动态规划.dp[0] = 0;
+//   动态规划.dp[1] = 1;
 //3. 确定递推公式
-//   状态转移方程 Leet.dp[i] = Leet.dp[i - 1] + Leet.dp[i - 2];
+//   状态转移方程 动态规划.dp[i] = 动态规划.dp[i - 1] + 动态规划.dp[i - 2];
 //4. 确定遍历顺序
-//   从递归公式dp[i] = Leet.dp[i - 1] + Leet.dp[i - 2];中可以看出，Leet.dp[i]是依赖 Leet.dp[i - 1] 和 Leet.dp[i - 2]，
+//   从递归公式dp[i] = 动态规划.dp[i - 1] + 动态规划.dp[i - 2];中可以看出，动态规划.dp[i]是依赖 动态规划.dp[i - 1] 和 动态规划.dp[i - 2]，
 //   那么遍历的顺序一定是从前到后遍历的。
 //5. 举例推导dp数组--->debug
-//   e.g. 按照这个递推公式dp[i] = Leet.dp[i - 1] + Leet.dp[i - 2]，推导当N为10的时候，dp数组应该是如下的
+//   e.g. 按照这个递推公式dp[i] = 动态规划.dp[i - 1] + 动态规划.dp[i - 2]，推导当N为10的时候，dp数组应该是如下的
 //   数列: 0 1 1 2 3 5 8 13 21 34 55 如果有bug就把dp数组打印出来看看和推导的数列是不是一致的。
     public int fib(int n) {
         //先设置初始值
         if(n<=1){return n;}
-        //确定dp数组(Leet.dp table)以及下标的含义
+        //确定dp数组(动态规划.dp table)以及下标的含义
         //创建长度为 n+1 的数组dp
         int[] dp = new int[n+1];
         //dp数组初始化
         dp[0]=0;
         dp[1]=1;
-      //Leet.dp[2]=1;
-      //Leet.dp[3]=2;
+      //动态规划.dp[2]=1;
+      //动态规划.dp[3]=2;
         for (int i = 2; i < dp.length; i++) {
             dp[i] = dp[i-1]+dp[i-2];
         }
@@ -47,34 +45,34 @@ public class dp {
 //    public:
 //    int fib(int N) {
 //        if (N <= 1) return N;
-//        int Leet.dp[2];
-//        Leet.dp[0] = 0;
-//        Leet.dp[1] = 1;
+//        int 动态规划.dp[2];
+//        动态规划.dp[0] = 0;
+//        动态规划.dp[1] = 1;
 //        for (int i = 2; i <= N; i++) {
-//            int sum = Leet.dp[0] + Leet.dp[1];
-//            Leet.dp[0] = Leet.dp[1];
-//            Leet.dp[1] = sum;
+//            int sum = 动态规划.dp[0] + 动态规划.dp[1];
+//            动态规划.dp[0] = 动态规划.dp[1];
+//            动态规划.dp[1] = sum;
 //        }
-//        return Leet.dp[1];
+//        return 动态规划.dp[1];
 //    }
     /*
      * 70. 爬楼梯
      */
-//1. 确定dp数组(Leet.dp table)以及下标的含义
-//   Leet.dp[i]的定义为: 爬到第i层楼梯，有dp[i]种方法
+//1. 确定dp数组(动态规划.dp table)以及下标的含义
+//   动态规划.dp[i]的定义为: 爬到第i层楼梯，有dp[i]种方法
 //2. dp数组如何初始化
-//   答案dp[0]=0比较有争议所以先不考虑dp[0]如果初始化，只初始化dp[1] = 1，Leet.dp[2] = 2
+//   答案dp[0]=0比较有争议所以先不考虑dp[0]如果初始化，只初始化dp[1] = 1，动态规划.dp[2] = 2
 //3. 确定递推公式
-//   从dp[i]的定义可以看出，Leet.dp[i] 可以有两个方向推出来。
+//   从dp[i]的定义可以看出，动态规划.dp[i] 可以有两个方向推出来。
 //   首先是dp[i - 1]，上i-1层楼梯，有dp[i - 1]种方法，那么再一步跳一个台阶不就是dp[i]。
 //   还有就是dp[i - 2]，上i-2层楼梯，有dp[i - 2]种方法，那么再一步跳两个台阶不就是dp[i]。
 //   so:
-//   状态转移方程 Leet.dp[i] = Leet.dp[i - 1] + Leet.dp[i - 2];
+//   状态转移方程 动态规划.dp[i] = 动态规划.dp[i - 1] + 动态规划.dp[i - 2];
 //4. 确定遍历顺序
-//   从递归公式dp[i] = Leet.dp[i - 1] + Leet.dp[i - 2];中可以看出，Leet.dp[i]是依赖 Leet.dp[i - 1] 和 Leet.dp[i - 2]，
+//   从递归公式dp[i] = 动态规划.dp[i - 1] + 动态规划.dp[i - 2];中可以看出，动态规划.dp[i]是依赖 动态规划.dp[i - 1] 和 动态规划.dp[i - 2]，
 //   那么遍历的顺序一定是从前到后遍历的。
 //5. 举例推导dp数组--->debug
-//   e.g. 按照这个递推公式dp[i] = Leet.dp[i - 1] + Leet.dp[i - 2]，推导当N为5的时候，dp数组应该是如下的
+//   e.g. 按照这个递推公式dp[i] = 动态规划.dp[i - 1] + 动态规划.dp[i - 2]，推导当N为5的时候，dp数组应该是如下的
 //   数列: 1 1 2 2 3 5 8 如果有bug就把dp数组打印出来看看和推导的数列是不是一致的。
     public int climbStairs(int n) {
         if(n==0)return 1;
@@ -95,24 +93,24 @@ public class dp {
      */
 //    public:
 //    int climbStairs(int n) {
-//        vector<int> Leet.dp(n + 1, 0);
-//        Leet.dp[0] = 1;
+//        vector<int> 动态规划.dp(n + 1, 0);
+//        动态规划.dp[0] = 1;
 //        for (int i = 1; i <= n; i++) {
-//            for (int j = 1; j <= m; j++) { // 把m换成2，就可以AC爬楼梯这道题 if (i - j >= 0) Leet.dp[i] += Leet.dp[i - j];
+//            for (int j = 1; j <= m; j++) { // 把m换成2，就可以AC爬楼梯这道题 if (i - j >= 0) 动态规划.dp[i] += 动态规划.dp[i - j];
 //            } }
-//        return Leet.dp[n];
+//        return 动态规划.dp[n];
 //    }
     /*
      * 746. 使用最小花费爬楼梯
      */
-//1. 确定dp数组(Leet.dp table)以及下标的含义
-//   Leet.dp[i]的定义为: 爬到第i层楼梯！！顶部！！需要的最小的力气
+//1. 确定dp数组(动态规划.dp table)以及下标的含义
+//   动态规划.dp[i]的定义为: 爬到第i层楼梯！！顶部！！需要的最小的力气
 //2. 确定递推公式
-//   状态转移方程 Leet.dp[i]=min(Leet.dp[i-2]+cost[i-1],Leet.dp[i-1]+cost[i]);
+//   状态转移方程 动态规划.dp[i]=min(动态规划.dp[i-2]+cost[i-1],动态规划.dp[i-1]+cost[i]);
 //3. dp数组如何初始化
-//   Leet.dp[0]=cost[0]
-//   Leet.dp[1]= min(Leet.dp[0]+cost[1],cost[1])
-//   Leet.dp[2]= min(Leet.dp[0]+cost[1],Leet.dp[1]+cost[2])
+//   动态规划.dp[0]=cost[0]
+//   动态规划.dp[1]= min(动态规划.dp[0]+cost[1],cost[1])
+//   动态规划.dp[2]= min(动态规划.dp[0]+cost[1],动态规划.dp[1]+cost[2])
 //4. 确定遍历顺序
 //   那么遍历的顺序一定是从前到后遍历的。
 //5. 举例推导dp数组--->debug
@@ -123,9 +121,9 @@ public class dp {
         int[] dp = new int[cost.length+1];          //      _
         dp[0] = 0;                                 //10   _| 20
         dp[1] = Math.min(cost[0],cost[1]);        //10  _| 15  [10,(10,15),(10+15,)]
-        // Leet.dp[2] = Math.min(cost[0],cost[1]);    //10 _|  10  [10,(10,15),(10+15,)]
+        // 动态规划.dp[2] = Math.min(cost[0],cost[1]);    //10 _|  10  [10,(10,15),(10+15,)]
         for (int i = 2; i < dp.length-1; i++) {
-            dp[i] = Math.min(dp[i-2]+cost[i-1],dp[i-1]+cost[i]);//Leet.dp[2] = min(Leet.dp[0]+cost[1],Leet.dp[1]+cost[2]) 25,
+            dp[i] = Math.min(dp[i-2]+cost[i-1],dp[i-1]+cost[i]);//动态规划.dp[2] = min(动态规划.dp[0]+cost[1],动态规划.dp[1]+cost[2]) 25,
         }
         System.out.println(Arrays.toString(dp));
         return dp[cost.length-1];
@@ -133,17 +131,17 @@ public class dp {
     /*
      * 62. 到finish有多少条路径
      */
-//1. 确定dp数组(Leet.dp table)以及下标的含义
-//   Leet.dp[i][j]的定义为: 到[i][j]有的不同路径个数？
+//1. 确定dp数组(动态规划.dp table)以及下标的含义
+//   动态规划.dp[i][j]的定义为: 到[i][j]有的不同路径个数？
 //2. 确定递推公式
-//   状态转移方程 Leet.dp[i][j]=Leet.dp[i-1][j]+Leet.dp[i][j-1];        _ _ _
+//   状态转移方程 动态规划.dp[i][j]=动态规划.dp[i-1][j]+动态规划.dp[i][j-1];        _ _ _
 //3. dp数组如何初始化                                     _ 2 _
-//   Leet.dp[0][0]=0?                                       _ _ _
-//   Leet.dp[1][0]= 1
-//   Leet.dp[1][1]= Leet.dp[0][1]+Leet.dp[1][0] = 2
-//   Leet.dp[0][1]= 1
-//   Leet.dp[0][j]= Leet.dp[0][j-1]
-//   Leet.dp[i][0]= Leet.dp[i-1][0]
+//   动态规划.dp[0][0]=0?                                       _ _ _
+//   动态规划.dp[1][0]= 1
+//   动态规划.dp[1][1]= 动态规划.dp[0][1]+动态规划.dp[1][0] = 2
+//   动态规划.dp[0][1]= 1
+//   动态规划.dp[0][j]= 动态规划.dp[0][j-1]
+//   动态规划.dp[i][0]= 动态规划.dp[i-1][0]
 //4. 确定遍历顺序
 //   那么遍历的顺序一定是从前到后遍历的。
 //5. 举例推导dp数组--->debug
@@ -363,8 +361,8 @@ public class dp {
 //    4 x x x x T
     //字符串
     //倒过来
-    //Leet.dp:
-    //1.定义dp：boolean Leet.dp[i][j] = string i--j是否为回文
+    //动态规划.dp:
+    //1.定义dp：boolean 动态规划.dp[i][j] = string i--j是否为回文
     //2.递归公式：
     public String longestPalindrome(String s) {
         boolean [][] dp = new boolean[s.length()][s.length()];
@@ -409,20 +407,20 @@ public class dp {
     }
     public static void main(String[] args) {
         dp dp = new dp();
-        //System.out.println(Leet.dp.fib(3));
+        //System.out.println(动态规划.dp.fib(3));
         int[] minCostClimbingStairs = new int[]{1,100,1,1,1,100,1,1,100,1};
         int[] dengcha = new int[]{1,2,3,8,9,10};
-//        Sy stem.out.println(Leet.dp.minCostClimbingStairs(minCostClimbingStairs));
-//        System.out.println(Leet.dp.uniquePaths(3,7));
+//        Sy stem.out.println(动态规划.dp.minCostClimbingStairs(minCostClimbingStairs));
+//        System.out.println(动态规划.dp.uniquePaths(3,7));
         int obstacleGrid[][] = new int[][]{{0,0,0,0,1,0,0,0}};
         int Grid[][] = new int[][]{{1,3,1},{1,5,1},{4,2,1}};
 
         System.out.println(8>>1);
-//        System.out.println(Leet.dp.uniquePathsWithObstacles(obstacleGrid));
-//        System.out.println(Leet.dp.integerBreak(4));
-//        System.out.println(Leet.dp.numTrees(4));
-//        System.out.println(Leet.dp.numberOfArithmeticSlices(dengcha))
-//        System.out.println(Leet.dp.minPathSum(Grid));
+//        System.out.println(动态规划.dp.uniquePathsWithObstacles(obstacleGrid));
+//        System.out.println(动态规划.dp.integerBreak(4));
+//        System.out.println(动态规划.dp.numTrees(4));
+//        System.out.println(动态规划.dp.numberOfArithmeticSlices(dengcha))
+//        System.out.println(动态规划.dp.minPathSum(Grid));
 
 //1 49; 2 48
 

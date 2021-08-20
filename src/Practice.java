@@ -1,6 +1,14 @@
+import java.util.*;
+
 public class Practice {
 
+
     public static void main(String[] args) {
+
+        StringBuffer stringBuffer = new StringBuffer("000022344");
+        while (stringBuffer.charAt(0) == '0') stringBuffer.deleteCharAt(0);
+        System.out.println(Integer.parseInt("2147483647"));
+
         int g[][] = new int[][]{{10, 16}, {2, 8}, {1, 6}, {7, 12}};
         char XO[][] = new char[][]{{'O', 'O'}, {'O', 'O'}};
         char XO1[][] = new char[][]{{'X', 'O', 'X', 'O', 'X', 'O'}, {'O', 'X', 'O', 'X', 'O', 'X'}, {'X', 'O', 'X', 'O', 'X', 'O'}, {'O', 'X', 'O', 'X', 'O', 'X'}};
@@ -41,5 +49,8 @@ public class Practice {
 //        solution.solve(XO1);
 
     }
+
+
+
 
 }

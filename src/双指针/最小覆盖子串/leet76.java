@@ -32,7 +32,7 @@ public class leet76 {
                 found = true;
             }
         }
-        // int[] Leet.dp = new int[s.length];
+        // int[] 动态规划.dp = new int[s.length];
         // for (int i = 0; i < s.length; i++) {
 
         // }
