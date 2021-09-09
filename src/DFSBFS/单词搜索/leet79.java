@@ -1,5 +1,7 @@
 package DFSBFS.单词搜索;
 
+import java.util.HashSet;
+
 public class leet79 {
     public boolean exist(char[][] board, String word) {
         //试试自己写
@@ -13,6 +15,7 @@ public class leet79 {
                 }
             }
         }
+
         return res;
     }
     //word "SEE"
@@ -26,4 +29,5 @@ public class leet79 {
         board[i][j] = tmp;
         return res;
     }
+   
 }

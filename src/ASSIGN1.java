@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class ASSIGN3670 {
+public class ASSIGN1 {
     //高 斯 消 元 法
     public double[][] gass(double[][] matrix) {
         int m = matrix.length;

@@ -1,4 +1,4 @@
-package 动态规划.背包;
+package 动态规划.背包.最小化目标值与所选元素的差;
 
 import java.util.Arrays;
 import java.util.HashSet;
